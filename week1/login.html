@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+</head>
+<script type="text/javascript">
+	function validate() {
+		if (document.getElementById('id').value.length==0) {
+			window.alert("ID is required!");
+		}
+		else if (document.getElementById('password').value.length==0) {
+			window.alert("PASSWORD is required!");
+		}
+		else{
+			var name=document.getElementById('id');
+			window.alert("Welcome "+name.value);
+		}
+	}
+</script>
+<body>
+	<h3 align="center">LOGIN PAGE</h3>
+	<table align="center">
+		<form method="post">
+			<tr>
+				<td>USER ID:</td>
+				<td>
+					<input type="text" name="id" id="id">
+				</td>
+			</tr>
+			<tr>
+				<td>PASSWORD:</td>
+				<td>
+					<input type="PASSWORD" name="password" id="password">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input value="LOGIN" type="submit" onclick="validate();">
+				</td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<script type="text/javascript">
+	function validate() {
+		window.alert("Book added to cart!");
+	}
+</script>
+<body>
+	<h3 align="center">BOOKS</h3>
+	<form method="post" action="cart.html">
+		<table align="center" border="1" width="1000">
+			<tr>
+				<th>Name</th>
+				<th>Logo</th>
+				<th>Author</th>
+				<th>Publication</th>
+				<th>Price</th>
+				<th>Cart</th>
+			</tr>
+			<tr align="center">
+				<td>CLRS</td>
+				<td><img src="images/profile.png" height="50"></td>
+				<td>Cormen</td>
+				<td>GC Publications</td>
+				<td>1500</td>
+				<td>
+					<input type="submit" value="Add to cart" onclick="validate();">
+				</td>
+			</tr>
+			<tr align="center">
+				<td>Computer Networks</td>
+				<td><img src="images/profile.png" height="50"></td>
+				<td>Foruzan</td>
+				<td>GC Publications</td>
+				<td>500</td>
+				<td>
+					<input type="submit" value="Add to cart" onclick="validate();">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
